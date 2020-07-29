@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Calendar</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		if (!String.prototype.trim) {
+			(function () {
+				// Вырезаем BOM и неразрывный пробел
+				String.prototype.trim = function () {
+					return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+				};
+			})();
+		}
+	</script>
+</head>
+	<body>
+		<div id="content">
+			<div id="sidebar" class="container">
+				<div class="clear header">
+					<div class="header__left">
+						<button id="add" class="btn btn-blue add">Добавить</button>
+						<button id="update" class="btn btn-blue update">Обновить</button>
+					</div>
+					<div class="header__right">
+						<div class="search">
+							<img class="search__icon" src="icons/search.svg" alt="search">
+							<div class="search__area">
+								<input id="search" type="text" class="search__input" placeholder="Событие, дата или участник" autocomplete="off">
+								<span class="search__close">&times;</span>
+								<div id="results" class="search__results"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar calendar-wrapper">
+					<div class="calendar-date">
+						<button id="prev" class="btn btn-prev btn-default"><</button>
+						<span id="current" class="calendar-date__current"></span>
+						<button id="next" class="btn btn-next btn-default">></button>
+						<button id="today" class="btn btn-today btn-default">Сегодня</button>
+					</div>
+				</div>
+				<div id="calendar-table"></div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

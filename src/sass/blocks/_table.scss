@@ -1,0 +1,61 @@
+#calendar-table {
+  position: relative;
+  padding: 8px 40px 10px 40px;
+}
+
+table, tr, td {
+  border: 1px solid #ddd;
+  border-spacing: 0px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 100px;
+}
+
+td {
+	position: relative;
+	vertical-align: top;
+	padding: 6px;
+	font-size: 10px;
+	line-height: 12px;
+	color: #aaa;
+	width: 100px;
+	cursor: pointer;
+	&.focus {
+		&:focus {
+			background: rgb(229, 241, 250);
+		}
+	}
+	&.active {
+		background: #c2e4fe !important;
+		position: relative;
+		color: black;
+	}
+	&.active.edit {
+		outline: 2px solid #2196f3;
+	}
+	&:hover {
+		transition: 0.35s all;
+		background: rgb(229, 241, 250);
+		outline: 1px solid #2196f3;
+	}
+	&.current {
+		background: #f4f4f4;
+	}
+	&.last {
+		background: #efefef;
+		position: relative;
+		outline: none;
+	}
+}

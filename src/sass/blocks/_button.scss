@@ -1,0 +1,65 @@
+.btn {
+	display: inline-block;
+	border: none;
+	height: 25px;
+	background-repeat: 4px;
+	margin: 0 5px;
+	padding: 0 8px;
+	translate: 0.5s all;
+	background: #ffffff;
+	cursor: pointer;
+	&:focus {
+		outline: none 
+	}
+	&-blue {
+		background: rgb(0, 111, 202);
+		color: #f2f2f2;
+		box-shadow: 1px 1px 1px rgb(117, 159, 194);
+		text-shadow: 1px 1px 2px #005094;
+		&:hover {
+			transition: 0.2s all;
+			background:  rgba(0, 111, 202, 0.8);;
+			color:  #ffffff;
+		}
+	}
+	&-today {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin: 0;
+		margin-left: 5px;
+		height: 16px;
+		&:hover {
+			transition: 0.2s all;
+			background:  rgba(244, 245, 244, 1);
+		}
+	}
+	&-prev, &-next {
+		width: 16px;
+		height: 16px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin: 0;
+		&:hover {
+			transition: 0.2s all;
+			background:  rgba(244, 245, 244, 1);
+		}
+	}
+	&-close {
+		position: absolute;
+		right: -5px;
+		top: 5px;
+		color: #bbb;
+		cursor: pointer;
+		display: block;
+		width: 14px;
+		height: 14px;
+		font-size: 12px;
+		text-align: center;
+		line-height: 14px;
+	}
+	&-add {
+		margin-right: 10px;
+	}
+}
+
+

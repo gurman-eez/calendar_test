@@ -1,0 +1,14 @@
+.calendar-wrapper {
+	padding: 8px 40px 10px 40px;
+}
+.calendar-date {
+	padding-bottom: 10px;
+	&__current {
+		font-size: 14px;
+		color: #555;
+		vertical-align: middle;
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+	}
+}

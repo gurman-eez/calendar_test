@@ -1,0 +1,92 @@
+.add-form {
+	position: relative;
+	margin-top: 10px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	height: 60px;
+	width: 260px;
+	box-shadow: -1px 1px 3px #bbb;
+	border-radius: 3px;
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+	&-advanced, &-edit {
+		position: relative;
+		margin-top: 10px;
+		padding: 20px;
+		background: #fff;
+		border: 1px solid #ccc;
+		width: 260px;
+		box-shadow: -1px 1px 3px #bbb;
+		border-radius: 3px;
+		position: absolute;
+		right: -320px;
+		top: -32px;
+		z-index: 2;
+		
+	}
+	input {
+		width: 260px;
+		margin-bottom: 10px;
+		height: 22px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		&:focus {
+			outline: none;
+		}
+	}
+	&-advanced {
+		input {
+			width: 260px;
+			margin-bottom: 5px;
+			height: 22px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			&:focus {
+			outline: none;
+		}
+		}
+		textarea {
+			width: 260px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			height: 60px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			resize: none;
+			&:focus {
+			outline: none;
+		}
+		}
+	}
+	&-edit {
+		h3 {
+			margin: 0;
+		}
+		p {
+			font-size: 11px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: rgb(102, 102, 102)
+		}
+		span {
+			font-size: 14px;
+			color: black;
+		}
+		textarea {
+			width: 260px;
+			margin-bottom: 10px;
+			height: 60px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			resize: none;
+			&:focus {
+			outline: none;
+		}
+		}
+	}
+	button {
+		height: 22px;
+	}
+}
